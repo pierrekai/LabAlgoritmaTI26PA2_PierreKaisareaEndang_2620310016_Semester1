@@ -1,11 +1,28 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main()
-{
-    int i;
-    for(i=2; i<=10; i+=2)
+int main() {
+    int total = 0;
+    int hitung = 0;
+    int bilangan = 2;
+
+    cout << "Deret bilangan genap: ";
+
+    while (hitung < 10) 
     {
-        cout <<i<<" ";
+        cout << bilangan;
+        total += bilangan;
+        hitung++;
+
+        if (hitung < 10) 
+        {
+            cout << " + ";
+        }
+        
+        bilangan += 2; 
     }
+
+    cout << " = " << total << endl;
+
+    return 0;
 }
